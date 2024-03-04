@@ -16,6 +16,7 @@ const NavBar = () => {
                     <li className="ml-4"><Link to="/details" className="text-white">Character Details</Link></li>
 
                     <li className="ml-4"><Link to="/notfound" className="text-white">Do Not Click This Page</Link></li>
+                    <li className="ml-4"><Link to="/characterdetails" className="text-white">Character Details Page</Link></li>
 
                 </ul>
             </div>

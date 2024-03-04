@@ -9,6 +9,7 @@ import NotFound from './components/NotFound';
 import CharacterDetails from './components/CharacterDetails';
 //import App from './App';
 import NavBar from './components/Navbar';
+import DetailsList from './components/Details';
 
 
 const routes = createBrowserRouter([
@@ -21,7 +22,7 @@ const routes = createBrowserRouter([
     element: <CharacterList/>
   },
   {
-    path: '/details',
+    path: '/details/:id',
     element: <CharacterDetails/>
   },
   {
@@ -31,6 +32,10 @@ const routes = createBrowserRouter([
   {
     path: '/',
     element: <NavBar/>
+  },
+  {
+    path: '/characterdetails',
+    element: <DetailsList/>
   }
 ])
 

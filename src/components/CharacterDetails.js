@@ -1,25 +1,21 @@
-import React from "react"
-//import CharacterList from "./CharacterList";
-//import character from './CharacterList'
-//use params for this and link character id
+import { useParams } from "react-router-dom"
 
+const CharacterDetails = () => {
+    const { id } = useParams()
+//find character with matchin id
+    
 
-function CharacterDetails ({character}) {
-    if (!character) {
-        return null
-    }
-
-    return(
+    return (
         <div>
             <h1> Character Details</h1>
-            <p>Name: { character.name}</p>
-            <img src = {character.image} alt={character.name} />
+            <p>Name: { id.name}</p>
+            <img src = {id.image} alt={id.name} />
 
-            <p>Gender: {character.gender}</p>
+            <p>Gender: {id.gender}</p>
 
-            <p>Status: {character.status}</p>
+            <p>Status: {id.status}</p>
         </div>
-        )
+    )
 }
 
 export default CharacterDetails
